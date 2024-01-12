@@ -156,7 +156,8 @@ REST_FRAMEWORK = {
 
 # EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
-CELERY_BROKER_URL = 'redis://localhost:6379/0'
+# CELERY_BROKER_URL = 'redis://localhost:6379/0'
+CELERY_BROKER_URL = 'redis://default:bAD5db3oBGO5GBL1gladHKC4HKge22gk@roundhouse.proxy.rlwy.net:34426'
 CELERY_TIMEZONE = 'Asia/Kathmandu'
 
 
