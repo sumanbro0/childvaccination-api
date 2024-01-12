@@ -8,6 +8,7 @@ app = Celery('core')
 
 app.config_from_object('django.conf:settings', namespace='CELERY')
 
+
 app.conf.beat_schedule = {
     'send-recommendation-to-parents': {
         'task': 'recommendation.tasks.send_recommendation_to_parents',

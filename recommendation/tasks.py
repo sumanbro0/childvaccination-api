@@ -80,7 +80,7 @@ def email_user(subject, from_email=None, **kwargs):
         msg.attach(msg_image)
 
     msg_image.add_header('Content-ID', '<image1>')
-
+    print("sending message", "***********")
     try:
         msg.send()
         print("email sent")
