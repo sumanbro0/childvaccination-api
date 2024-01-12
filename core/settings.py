@@ -164,7 +164,7 @@ REST_FRAMEWORK = {
 # EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 # CELERY_BROKER_URL = 'redis://localhost:6379/0'
-CELERY_BROKER_URL =  os.getenv('REDIS_PRIVATE_URL')
+CELERY_BROKER_URL =  os.getenv('REDIS_URL')
 CELERY_TIMEZONE = 'Asia/Kathmandu'
 
 
