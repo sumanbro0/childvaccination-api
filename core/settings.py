@@ -28,7 +28,7 @@ DEBUG = True
 
 # ALLOWED_HOSTS = []
 ALLOWED_HOSTS = ['*']
-CSRF_TRUSTED_ORIGINS = ["https://web-production-c9fa.up.railway.app"]
+CSRF_TRUSTED_ORIGINS = ["https://web-production-993e2.up.railway.app"]
 
 
 # Application definition
@@ -143,10 +143,10 @@ MEDIA_URL = 'media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATICFILES_STORAGE="whitenoise.storage.CompressedManifestStaticFilesStorage"
-STATICFILES_DIRS = [
-#     # os.path.join(BASE_DIR, '(your project name)/static')
-    os.path.join(BASE_DIR, "core/static")
-]
+# STATICFILES_DIRS = [
+# #     # os.path.join(BASE_DIR, '(your project name)/static')
+#     os.path.join(BASE_DIR, "core/static")
+# ]
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
