@@ -13,6 +13,7 @@ domain = current_site.domain
 
 
 def create_all_recommendation(age, age_unit):
+    print("creating recommendation **********************")
     try:
         print(age,age_unit)
         suitable_nutritions = Nutrition.objects.filter(
@@ -63,6 +64,8 @@ from django.contrib.staticfiles.storage import staticfiles_storage
 
 @shared_task
 def email_user(subject, from_email=None, **kwargs):
+    print("Send an email to this user. **********************")
+
     """Send an email to this user."""
     recipient_list = [kwargs.get('email')]
     context = kwargs.get('context')
