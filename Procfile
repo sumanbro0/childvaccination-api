@@ -1,1 +1,1 @@
-web: celery -A core worker --loglevel=info & celery -A core beat --loglevel=info & python manage.py migrate && gunicorn core.wsgi --log-file -
+web: celery -A core worker --loglevel=info --uid=1000 -P solo & celery -A core beat --loglevel=info & python manage.py migrate && gunicorn core.wsgi --log-file -
